@@ -4,7 +4,7 @@ html{
 h1{
 	font-size: 29px;
 }
-h2{
+h2, .student-count{
 	font-size: 24px;
 }
 h3{
@@ -23,7 +23,7 @@ button{
 nav{
 	padding-bottom:0 !important;
 }
-nav .active{
+nav .active-menu{
 	padding-bottom: 10px !important;
 }
 /* index.html */
@@ -50,7 +50,7 @@ nav .active{
 	height: 375px;
 	position:relative;
 }
-.form-input > .btn-login{
+.btn-login{
 	background: #4285F4;
 	text-transform: uppercase;
 	border-radius: 0 0 26px 26px;
@@ -62,7 +62,7 @@ nav .active{
 	-webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
-.form-input .btn-login:hover{
+.btn-login:hover{
 	box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)
 }
 .btn-login > h3{
@@ -101,7 +101,7 @@ nav .active{
 
 
 /* dashboard template*/
-.active{
+.active-menu{
 	border-bottom: 3px solid #4688F1;
     color: #4688F1;
     padding-bottom:1px;
@@ -110,34 +110,20 @@ nav .active{
 .btn-logout{
 	margin-left: 20px;
 	background: #4285F4;
-	border-radius: 60px;
-	width: 120px;
+	/* Circle */
+	/*border-radius: 60px;*/
+	width: 100px;
 	height: 40px;
 	color: #FFFFFF;
 	transition: all 0.5s;
 	padding: 10px;
+	/* Rectangle: */
+	background: #4285F4;
+	border-radius: 10px;
+    transition: all 0.3s ease 0s;
 }
-.btn-logout span {
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-.btn-logout span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.btn-logout:hover span {
-  padding-right: 25px;
-}
-
-.btn-logout:hover span:after {
-  opacity: 1;
-  right: 0;
+.btn-logout:hover {
+  background: #CF4647;
 }
 .bg-nav{
 	background-color: #FFFFFF !important;
@@ -203,9 +189,6 @@ nav .active{
 	padding-left: 15px;
 	margin-top: 30px;
 }
-.search-bar{
-
-}
 .active-status{
 	margin-right: 3px;
     font-size: 10px;
@@ -243,4 +226,90 @@ nav .active{
 }
 .modal{
 	box-shadow: 0 12px 36px 16px rgba(0, 0, 0, 0.24) !important;
+}
+
+/* SETTINGS */
+.grey{
+	color: #777777;
+}
+.margin{
+	margin-bottom: 30px;
+}
+
+/* Student Profile */
+.sm-headings{
+	margin-top: 20px;
+	font-weight: bold;
+}
+.profile-picture {
+	margin-top: 0 !important;
+	font-weight: normal !important;
+}
+.custom-file-input{
+	cursor: pointer;
+}
+.date-padding-reset{
+	padding-left: 0 !important;
+}
+
+/* promissory form template*/
+.container .form-padding {
+	padding-bottom: 50px;
+}
+.form-margin {
+	margin-bottom: 10px;
+}
+.form-heading{
+	color: #A4A4A4;
+	letter-spacing: 0;
+}
+.form-heading h1{
+	margin-bottom: 0;
+}
+.form-heading h4{
+	padding-top: 0;
+	padding-bottom: 5px;
+}
+.btn:hover {
+	color: #FFFFFF;
+	background-color: #4285F4;
+	transition: 0.5s;
+	opacity: 1;
+}
+
+/* cashier transaction */
+.float-right{
+	float: right;
+}
+
+.input-padding {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.amount-emphasis {
+	color: red;
+}
+
+.btn-type {
+	padding-right: 50px;
+	padding-left: 50px;
+	margin-right: 50px;
+}
+
+.padding-btn {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.pagination{
+	justify-content: center;
+}
+
+/* SECTION LIST */
+.card-shadow{
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+}
+.card{
+	margin-top: 20px;
 }
